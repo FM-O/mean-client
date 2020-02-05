@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit {
     this.authService.signup(this.form.value).subscribe((user: User) => {
       this.router.navigate(['/signin']);
     }, err => {
-      this.error = err;
+      this.error = err.error;
     })
   }
 }

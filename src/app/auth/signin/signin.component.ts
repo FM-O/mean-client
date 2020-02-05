@@ -29,7 +29,7 @@ export class SigninComponent implements OnInit {
     this.authService.signin(this.form.value).subscribe(() => {
       this.router.navigate(['/']);
     }, err => {
-      this.error = err;
+      this.error = err.error;
     });
   }
 
