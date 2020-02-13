@@ -44,7 +44,6 @@ export function authReducer(state: AuthState = initialAuthState, action: AuthAct
                 user: action.payload
             };
         default:
-            break;
+            return state;
     }
-    return state;
 }

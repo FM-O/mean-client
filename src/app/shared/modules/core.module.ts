@@ -8,7 +8,6 @@ import { RouterModule } from '@angular/router';
 import { LayoutModule } from './layout.module';
 
 // Components
-import { HomepageComponent } from 'src/app/components/homepage/homepage.component';
 import { SignupComponent } from 'src/app/components/signup/signup.component';
 import { SigninComponent } from 'src/app/components/signin/signin.component';
 import { TopbarComponent } from '../components/topbar/topbar.component';
@@ -17,7 +16,6 @@ import { TopbarComponent } from '../components/topbar/topbar.component';
 import { AuthInterceptor } from '../interceptors/auth.interceptor';
 
 const COMPONENTS = [
-  HomepageComponent,
   SignupComponent,
   SigninComponent,
   TopbarComponent
